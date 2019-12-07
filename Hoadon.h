@@ -7,37 +7,39 @@
 
 using namespace std;
 
-class Hoadon {
+class Hoadon : public Khachthue {
 
 private:
-	string chuthue;
+	int mahoadon;
+	double giaphong;
 	string thoigianthue;
 	double tongtien;
 	string ngaythanhtoan;
 	Khachthue khachthue;
 
 public:
-	string getChuthue();
-
-	Khachthue getNguoithue();
-
+	int getMahoadon();
+	void setMahoadon(int mahoadon);
+	double getGiaphong();
+	void setGiaphong(double giaphong);
+	Khachthue getKhachthue();
 	void setThoigianthue(string thoigianthue);
-
 	string getThoigianthue();
-
 	double getTongtien();
-
 	void setTongtien(double tongtien);
-
+	string getNgaythanhtoan();
 	void setNgaythanhtoan(string ngaythanhtoan);
 
+	void themHoadon();
+	
 	void xemHoadon();
 
-	void suaHoadon();
+	void suaHoadon(int r);
 
-	void xoaHoadon();
-
-	void timHoadon();
+	void xoaHoadon(int r);
+	
+	int kiemtra(int m);
+	int check(int r);
 };
 
 #endif

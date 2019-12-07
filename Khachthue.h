@@ -7,8 +7,7 @@ using namespace std;
 
 class Khachthue {
 
-private:
-	Phong p;
+protected:
 	int maphong;
 	string ten;
 	string sdt;

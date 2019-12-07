@@ -160,7 +160,7 @@ void View::show2() {
 void View::show3() {
 	Hoadon hoadon;
 	int lc;
-	while (lc!=3) {
+	while (lc!=4) {
 		system("cls");
 		cout << endl;
 		cout << endl;
@@ -169,8 +169,7 @@ void View::show3() {
 		cout << "\t\t\t=  Quan li hoa don tien phong                        =" << endl;
 		cout << "\t\t\t=                                                    =" << endl;
 		cout << "\t\t\t=               1. Xem thong tin hoa don             =" << endl;
-		cout << "\t\t\t=               2. Tim kiem hoa don                  =" << endl;
-		cout << "\t\t\t=                                                    =" << endl;
+		cout << "\t\t\t=               2. Them hoa don                      =" << endl;
 		cout << "\t\t\t=                                                    =" << endl;
 		cout << "\t\t\t=                                                    =" << endl;
 		cout << "\t\t\t=     0. Tro ve trang truoc                          =" << endl;
@@ -179,7 +178,7 @@ void View::show3() {
 		cout << "\t\t\tNhap lua chon cua ban: ";
 		cin >> lc;
 		
-		if ((lc > 2) or (lc < 0)) {
+		if ((lc > 3) or (lc < 0)) {
 			cout << "\n\t\t\tNhan mot nut bat ki de tiep tuc....!!";
 			getch();
 		} else {
@@ -188,7 +187,7 @@ void View::show3() {
 					hoadon.xemHoadon();
 					break;
 				case 2:
-					hoadon.timHoadon();
+					hoadon.themHoadon();
 					break;
 				case 0:
 					show();
